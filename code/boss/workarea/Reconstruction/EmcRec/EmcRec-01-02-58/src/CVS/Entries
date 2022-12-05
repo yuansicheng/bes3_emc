@@ -1,0 +1,21 @@
+/EmcRec.cxx/1.55/Wed Aug  8 05:59:23 2018//TEmcRec-01-02-58
+/EmcRecCluster2Shower.cxx/1.11/Tue Oct 13 08:34:12 2009//TEmcRec-01-02-58
+/EmcRecDigit2Hit.cxx/1.22/Mon Oct 26 00:31:47 2015//TEmcRec-01-02-58
+/EmcRecFastCluster2Shower.cxx/1.10/Thu Sep 24 07:49:08 2009//TEmcRec-01-02-58
+/EmcRecHit2Cluster.cxx/1.8/Thu Sep 24 07:49:08 2009//TEmcRec-01-02-58
+/EmcRecNeighbor.cxx/1.7/Tue Mar  4 02:25:26 2008//TEmcRec-01-02-58
+/EmcRecParameter.cxx/1.26/Wed Aug  8 05:59:23 2018//TEmcRec-01-02-58
+/EmcRecSeedEThreshold.cxx/1.9/Thu Sep 24 07:49:08 2009//TEmcRec-01-02-58
+/EmcRecSeedLocalMax.cxx/1.6/Thu Sep 24 07:49:08 2009//TEmcRec-01-02-58
+/EmcRecShowerEnergy.cxx/1.11/Thu Sep 24 07:49:08 2009//TEmcRec-01-02-58
+/EmcRecShowerPosLin.cxx/1.17/Fri Jan 25 03:16:07 2013//TEmcRec-01-02-58
+/EmcRecShowerPosLinShMax.cxx/1.1/Fri Jan 25 03:42:03 2013//TEmcRec-01-02-58
+/EmcRecShowerPosLog.cxx/1.28/Thu Jun  5 07:05:29 2014//TEmcRec-01-02-58
+/EmcRecShowerPosLogShMax.cxx/1.2/Wed Aug  8 05:59:23 2018//TEmcRec-01-02-58
+/EmcRecShowerPosLoglin.cxx/1.1/Fri Jan 25 03:42:03 2013//TEmcRec-01-02-58
+/EmcRecShowerShape.cxx/1.6/Wed Feb 19 00:26:24 2014//TEmcRec-01-02-58
+/EmcRecSplitWeighted.cxx/1.33/Fri Jan 25 03:16:07 2013//TEmcRec-01-02-58
+/EmcRecTDS.cxx/1.6/Wed Aug 27 07:35:08 2008//TEmcRec-01-02-58
+/EmcRecTofDigitCalib.cxx/1.3/Tue Mar  4 02:25:26 2008//TEmcRec-01-02-58
+/EmcRecTofMatch.cxx/1.8/Thu Mar 27 09:09:45 2008//TEmcRec-01-02-58
+D

@@ -1,0 +1,7 @@
+macro BesSim_libraries /cvmfs/bes3.ihep.ac.cn/bes3sw/ExternalLib/SLC6/ExternalLib/gaudi/GAUDI_v23r9/GaudiSvc/x86_64-slc6-gcc46-opt/libGaudiSvc.so
+macro shlibsuffix so
+macro library_install_command python" "/cvmfs/bes3.ihep.ac.cn/bes3sw/ExternalLib/SLC6/ExternalLib/gaudi/GAUDI_v23r9/GaudiPolicy/scripts/install.py" "-xCVS" "-x*~" "-x*.stamp" "-x*.bak" "-x.*" "-x*.pyc" "-x*.pyo" "-s" "--log=./install.x86_64-slc6-gcc46-opt.history" "
+macro symunlink /bin/rm" "-f" "
+build_strategy with_installarea
+macro CMTINSTALLAREA /junofs/users/yuansc/bes3_emc/code/boss/workarea/InstallArea
+macro tag x86_64-slc6-gcc46-opt

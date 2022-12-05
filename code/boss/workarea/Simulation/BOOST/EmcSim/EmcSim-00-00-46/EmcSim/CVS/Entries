@@ -1,0 +1,13 @@
+/BesCrystalParameterisation.hh/1.2/Mon Oct 29 01:58:51 2007//TEmcSim-00-00-46
+/BesEmcConstruction.hh/1.5/Thu Mar 25 02:14:47 2010//TEmcSim-00-00-46
+/BesEmcDetectorMessenger.hh/1.1.1.1/Tue Sep 27 02:22:13 2005//TEmcSim-00-00-46
+/BesEmcDigi.hh/1.2/Wed Dec 13 02:54:00 2006//TEmcSim-00-00-46
+/BesEmcDigitization.hh/1.1.1.1/Tue Sep 27 02:22:13 2005//TEmcSim-00-00-46
+/BesEmcDigitizer.hh/1.4/Sat Feb 19 22:45:10 2011//TEmcSim-00-00-46
+/BesEmcEndGeometry.hh/1.5/Wed Dec  3 01:08:16 2008//TEmcSim-00-00-46
+/BesEmcGeometry.hh/1.3/Tue Sep 11 00:44:06 2007//TEmcSim-00-00-46
+/BesEmcHit.hh/1.3/Tue Sep  4 08:12:07 2007//TEmcSim-00-00-46
+/BesEmcParameter.hh/1.5/Tue Sep 11 00:44:06 2007//TEmcSim-00-00-46
+/BesEmcSD.hh/1.4/Thu May 24 01:53:26 2007//TEmcSim-00-00-46
+/BesEmcWaveform.hh/1.3/Wed Dec 13 02:54:00 2006//TEmcSim-00-00-46
+D

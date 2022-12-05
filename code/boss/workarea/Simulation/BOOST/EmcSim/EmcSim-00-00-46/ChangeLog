@@ -1,0 +1,32 @@
+2011-02-20 He Miao  <hem@ihep.ac.cn>
+	* Get EmcCalibConstSvc in the constructor to avoid crash.
+
+2010-04-01 He Miao  <hem@ihep.ac.cn>
+  * Fix memory leak.
+
+2009-06-10 He Miao  <hem@ihep.ac.cn>
+  * Set threshold of crystal energy to 0.2MeV.
+
+2009-05-07 He Miao  <hem@ihep.ac.cn>
+  * Set average time to 8 acorrding to data.
+
+2009-02-20 He Miao  <hem@ihep.ac.cn>
+  * Subtract pedstal caused by electronics noise.
+
+2008-12-03 He Miao  <hem@ihep.ac.cn>
+  * Add endcap support system.
+  * Add EmcSim.txt and set noise level to 0.2MeV.
+  * Set average time to 20 acorrding to data.
+
+2008-10-29 He Miao  <hem@ihep.ac.cn>
+  * Read calibration constants from database.
+
+2008-07-20 He Miao  <hem@ihep.ac.cn>
+  * Update EmcLightOutput.dat.
+
+2008-04-29 He Miao  <hem@ihep.ac.cn>
+  * Replace strstream by stringstream in BesEmcSD.
+  * Set PD as sensitive detector.
+
+2008-03-23 He Miao  <hem@ihep.ac.cn>
+  * To avoid error caused by precision, get energy before digitization.

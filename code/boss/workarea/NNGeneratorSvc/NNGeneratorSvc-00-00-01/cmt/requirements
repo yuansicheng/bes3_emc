@@ -1,0 +1,13 @@
+package NNGeneratorSvc
+
+use Identifier       Identifier-*             DetectorDescription
+use GaudiInterface   GaudiInterface-01-*      External
+
+use BesGeant4    BesGeant4-00-*   External
+use BesCLHEP     BesCLHEP-*    External
+use EmcRecGeoSvc     EmcRecGeoSvc-01-*        Emc
+
+apply_pattern dual_use_library  files="*.cc components/*.cc"
+library NNGeneratorSvc *.cc components/*.cc
+
+macro_append NNGeneratorSvc_linkopts " -L/junofs/users/yuansc/bes3_emc/code/NNPred/ -lNNPred -L/cvmfs/juno.ihep.ac.cn/centos7_amd64_gcc830/Pre-Release/J20v2r0-branch/ExternalLibs/libtorch/1.6.0/lib -ltorch -lc10 -ltorch_cpu "

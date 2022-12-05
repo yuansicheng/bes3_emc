@@ -1,0 +1,39 @@
+#ifndef EXTRACT_EMC_INFO_H
+#define EXTRACT_EMC_INFO_H
+
+#include "GaudiKernel/AlgFactory.h"
+#include "GaudiKernel/Algorithm.h"
+#include "GaudiKernel/NTuple.h"
+#include "GaudiKernel/SmartDataPtr.h"
+
+class ExtractEmcInfo : public Algorithm {
+    public:
+        ExtractEmcInfo(const std::string& name, ISvcLocator* pSvcLocator);
+        StatusCode initialize();
+        StatusCode execute();
+        StatusCode finalize();
+
+    private:
+        bool bookNTuple();
+        bool getInfoFromMcParticleCol();
+        bool getInfoFromRecEmcCol();
+        bool getLeadingShower();
+
+        int m_n;
+
+        NTuple::Tuple*  m_tuple;
+        NTuple::Item<int> m_event;
+        NTuple::Item<float> m_momentum;
+        NTuple::Item<float> m_theta;
+        NTuple::Item<float> m_phi;
+
+        NTuple::Item<int> m_all_hit_index;
+        NTuple::Array<int> m_all_hit_cell_id;
+        NTuple::Array<float> m_all_hit_energy;
+
+        NTuple::Item<int> m_leading_shower_hit_index;
+        NTuple::Item<int> m_leading_shower_id;
+        NTuple::Array<int> m_leading_shower_hit_cell_id_5x5;
+};
+
+#endif

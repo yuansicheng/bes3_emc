@@ -1,0 +1,9 @@
+#CMT---> (constituents.make) Starting install_includes
+#CMT---> (constituents.make) Starting NNGeneratorSvcLib
+#CMT---> (constituents.make) Starting config
+Files from standard ../NNGeneratorSvc already installed
+------> config.h ok
+#CMT---> (constituents.make) install_includes done
+#CMT---> (constituents.make) config done
+#CMT---> compiling ../src/NNGeneratorSvc.cc
+#CMT---> compiling ../src/components/NNGeneratorSvc_load.cc

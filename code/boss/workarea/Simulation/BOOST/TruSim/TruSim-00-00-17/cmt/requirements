@@ -1,0 +1,14 @@
+package TruSim
+
+author Deng ziyan<dengzy@mail.ihep.ac.cn>
+branches src cmt
+
+use BesPolicy    BesPolicy-01-*
+use BesGeant4    BesGeant4-*   External
+use BesCLHEP BesCLHEP-* External
+use GeneratorObject GeneratorObject-* Generator
+
+include_dirs  $(TruSim_root)/TruSim
+
+apply_pattern installed_library
+library  TruSim *.cc

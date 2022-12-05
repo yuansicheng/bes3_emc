@@ -1,0 +1,35 @@
+#EMC digitise parameter
+#array_size tau_CsI ADC_highRange ADC_midRange ADC_lowRange sampleTime ADC_bit photonsPerMeV nonuniformity    peakTime  timeOffset    
+    60      1000.      2500.        625           78          50        10        6000          0.05            4000      2500
+
+#EMC endcap geometry parameter
+#WorldRmin1 WorldRmax1  WorldRmin2  WorldRmax2  WorldDz WorldZPosition  CrystalLength CrystalLength1
+    485       881.6       485         1145.85       384       1573          280      240
+#crystal number in one layer
+#   0   1   2   3   4   5
+    64  64  80  80  96  96
+#pentagonal number in one sector
+    5   6   14  15  16
+
+#EMC crystal casing parameter
+#Tyvek_Thickness  Al_Thickness  Mylar_Thickness
+      0.26            0.025         0.025
+
+#EMC barrel geometry parameter                          
+#BSCRmin  BSCDz BSCRmin1  BSCRmax1  BSCRmin2  BSCRmax2  BSCDz1
+  940     1630    0         938       0      1106.8135  249.363
+#BSCAngleRotat  BSCNbPhi  BSCNbTheta
+    1.5           120         22
+#BSCYFront0 BSCYFront BSCYFront1  BSCPosition0  BSCPosition1
+#    51          52        52.466      25            50
+    50.9448     51.8896    52.3546     25            50
+
+#EMC barrel support frame
+#TaperRing  Dz    Thick1 Thick2 Thick3 Theta InnerLength OuterLength
+         243.994    6      8      9    35.309   42.006    98.187
+#RearBox Length Dz HangingPlateDz OCGirderAngle rearCasingThickness
+          56    30      5             0.5             0.5
+#OrganicGlass X Y Z   PDLength X  Y  Z  AlPlateDz PABoxDz PABoxThickness
+        28.2 26.9 3       10. 20. 0.3      8       16          1
+#cableDr waterPipeDr waterPipeThick SPBarThick SPBarThick1 SPBarwidth EndRingDz Dr Rmin
+   3          5           1.5           42          7          50        90    142 1145.

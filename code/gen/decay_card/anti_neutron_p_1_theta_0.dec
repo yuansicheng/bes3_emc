@@ -1,0 +1,6 @@
+noPhotos
+Decay J/psi
+# Br particle SINGLE Pmin Pmax Cos[theta]_min Cos[theta]_max phi_min phi_max;
+1.0 anti-n0 SINGLE 1 1.001 0 0.001;
+Enddecay
+End

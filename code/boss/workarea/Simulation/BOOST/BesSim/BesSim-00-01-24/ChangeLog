@@ -1,0 +1,25 @@
+2021-05-07 Zhang Yao <zhangyao@ihep.ac.cn>
+    * Save BesMdcHitsCollection instead of BesMdcTruthCollection
+
+2021-04-21 Zhang Yao <zhangyao@ihep.ac.cn>
+    * Add more attibute of MdcMcHit in BesMcTruthWriter
+
+2015-07-28 Sun Shengsen
+	* DetVerSvc is added, and DetVer>2, 72MRPC m_tof==4
+
+2015-05-19 Sun Shengsen
+	* Open the switch of Detector Version for tesing
+2015-03-17 Sun Shengsen
+	* A testing version for endcap TOF MRPC upgrade
+2012-11-15 Deng Ziyan
+share/ direcotory was missing in tag BesSim-00-01-21
+
+2012-05-24 Matthias Ullrich <Matthias.Ullrich@physik.uni-giessen.de>
+*   As a new Tofendcap detector (MRPC) has been implemented into
+    the simulation the following files have been
+    adapted (changes will only be considered if the new MRPC detector is activated):
+    QGSP_BERT_CHIPS.icc : Implemented StepLimiter (will only affect MRPC volume!)
+    steplimiter.hh:  Implemented StepLimiter (will only affect MRPC volume!)
+    BesRawDataWriter
+    BesSim
+    BesMcTruthWriter

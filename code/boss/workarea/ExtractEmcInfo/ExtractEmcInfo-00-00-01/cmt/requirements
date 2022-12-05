@@ -1,0 +1,20 @@
+package ExtractEmcInfo
+
+use BesPolicy BesPolicy-*
+use GaudiInterface GaudiInterface-* External
+
+use DstEvent DstEvent-* Event
+use EventModel   EventModel-*  Event
+use EvtRecEvent EvtRecEvent-* Event
+
+use VertexFit    VertexFit-*   Analysis
+use ParticleID   ParticleID-*  Analysis
+
+use BesROOT      BesROOT-00-*     External
+use McTruth      McTruth-*        Event
+
+apply_pattern dual_use_library  files="*.cxx components/*.cxx"
+library ExtractEmcInfo  *.cxx  components/*.cxx
+
+apply_pattern declare_runtime files=*.txt
+

@@ -1,0 +1,439 @@
+
+**************************************************
+               BOSS version: 7.0.8
+************** BESIII Collaboration **************
+
+the jobOptions file is : test.txt
+JobOptionsSvc        INFO # =======> /cvmfs/bes3.ihep.ac.cn/bes3sw/Boss/7.0.8/Event/RootIO/RootIO-00-01-33/share/jobOptions_ReadRec.txt
+JobOptionsSvc        INFO # (2,1): ApplicationMgr.DLLs += ["RecMakerAlg"]
+JobOptionsSvc        INFO # (3,1): ApplicationMgr.TopAlg += ["RecMakerAlg"]
+JobOptionsSvc        INFO # (5,1): ApplicationMgr.DLLs += ["RootCnvSvc"]
+JobOptionsSvc        INFO # (7,1): ApplicationMgr.ExtSvc += ["EvtPersistencySvc/EventPersistencySvc"]
+JobOptionsSvc        INFO # (8,1): ApplicationMgr.ExtSvc += ["RootEvtSelector/EventSelector", "RootCnvSvc/EventCnvSvc"]
+JobOptionsSvc        INFO # (10,1): EventPersistencySvc.CnvServices += ["EventCnvSvc"]
+JobOptionsSvc        INFO # =======> /junofs/users/yuansc/workarea/ExtractEmcInfo/ExtractEmcInfo-00-00-01/share/job_option_extract_emc_info.txt
+JobOptionsSvc        INFO # (1,1): ApplicationMgr.DLLs += ["ExtractEmcInfo"]
+JobOptionsSvc        INFO # (2,1): ApplicationMgr.TopAlg += ["ExtractEmcInfo"]
+JobOptionsSvc        INFO # =======> /junofs/users/yuansc/workarea/ExtractEmcInfo/ExtractEmcInfo-00-00-01/share/test.txt
+JobOptionsSvc        INFO # (7,1): MessageSvc.OutputLevel = 2
+JobOptionsSvc        INFO # (11,1): ApplicationMgr.EvtMax = -1
+JobOptionsSvc        INFO # (15,1): EventCnvSvc.digiRootInputFile = ["test.rec"]
+JobOptionsSvc        INFO # (17,1): ApplicationMgr.HistogramPersistency = "ROOT"
+JobOptionsSvc        INFO # (19,1): NTupleSvc.Output = ["FILE1 DATAFILE='test.root' OPT='NEW' TYP='ROOT'"]
+JobOptionsSvc        INFO Job options successfully read in from test.txt
+ApplicationMgr      DEBUG Getting my own properties
+ApplicationMgr    SUCCESS 
+====================================================================================================================================
+                                                   Welcome to ApplicationMgr (GaudiCoreSvc v1r5)
+                                          running on lxslc707.ihep.ac.cn on Fri Feb 18 18:18:36 2022
+====================================================================================================================================
+
+[1mRooFit v3.56 -- Developed by Wouter Verkerke and David Kirkby[0m 
+                Copyright (C) 2000-2013 NIKHEF, University of California & Stanford University
+                All rights reserved, please read http://roofit.sourceforge.net/license.txt
+
+ApplicationMgr       INFO Successfully loaded modules : RecMakerAlg, RootCnvSvc, ExtractEmcInfo
+RootCnvSvc          DEBUG RootCnvSvc::constructor
+ApplicationMgr       INFO Application Manager Configured successfully
+ServiceManager      DEBUG Initializing service IncidentSvc
+IncidentSvc         DEBUG Service base class initialized successfully
+ServiceManager      DEBUG Initializing service EventPersistencySvc
+EventPersistenc...  DEBUG  'CnvServices':[ 'EventCnvSvc' ]
+EventPersistenc...  DEBUG Service base class initialized successfully
+ServiceManager      DEBUG Initializing service EventSelector
+EventSelector       DEBUG Service base class initialized successfully
+EventSelector       DEBUG RootEvtSelector::initialize
+EventSelector        INFO RootEvtSelector input has been set to ROOT
+EventDataSvc        DEBUG Service base class initialized successfully
+EventSelector        INFO currentFile in RootEvtSelector::initialize 
+TagFilterSvc         INFO TagFilterSvc::initialize()
+TagFilterSvc        DEBUG Service base class initialized successfully
+EventSelector        INFO get the TagFilterSvc
+ServiceManager      DEBUG Initializing service EventCnvSvc
+EventCnvSvc         DEBUG RootCnvSvc::initialize
+EventCnvSvc         DEBUG Service base class initialized successfully
+EventCnvSvc         DEBUG RootCnvSvc::declareObject /Event/Dst/DstMdcDedxCol classid: 132492
+EventCnvSvc         DEBUG RootCnvSvc::declareObject /Event/Dst classid: 1400
+EventCnvSvc         DEBUG RootCnvSvc::declareObject /Event/Digi/EmcDigiCol classid: 132392
+EventCnvSvc         DEBUG RootCnvSvc::declareObject /Event/MC/EmcMcHitCol classid: 132285
+EventCnvSvc         DEBUG RootCnvSvc::declareObject /Event/Dst/DstEmcShowerCol classid: 132512
+EventCnvSvc         DEBUG RootCnvSvc::declareObject /Event classid: 110
+EventCnvSvc         DEBUG RootCnvSvc::declareObject /Event/EventHeader classid: 112
+EventCnvSvc         DEBUG RootCnvSvc::declareObject /Event/Navigator classid: 5101
+EventCnvSvc         DEBUG RootCnvSvc::declareObject /Event/Dst/DstExtTrackCol classid: 132532
+EventCnvSvc         DEBUG RootCnvSvc::declareObject /Event/MC classid: 1200
+EventCnvSvc         DEBUG RootCnvSvc::declareObject /Event/MC/McParticleCol classid: 263345
+EventCnvSvc         DEBUG RootCnvSvc::declareObject /Event/Digi/MdcDigiCol classid: 132382
+EventCnvSvc         DEBUG RootCnvSvc::declareObject /Event/Dst/DstMdcKalTrackCol classid: 132487
+EventCnvSvc         DEBUG RootCnvSvc::declareObject /Event/MC/MdcMcHitCol classid: 132283
+EventCnvSvc         DEBUG RootCnvSvc::declareObject /Event/Dst/DstMdcTrackCol classid: 132482
+EventCnvSvc         DEBUG RootCnvSvc::declareObject /Event/Digi/MucDigiCol classid: 132412
+EventCnvSvc         DEBUG RootCnvSvc::declareObject /Event/MC/MucMcHitCol classid: 132286
+EventCnvSvc         DEBUG RootCnvSvc::declareObject /Event/Dst/DstMucTrackCol classid: 132522
+EventCnvSvc         DEBUG RootCnvSvc::declareObject /Event/Digi classid: 1300
+EventCnvSvc         DEBUG RootCnvSvc::declareObject /Event/Digi/TofDigiCol classid: 132402
+EventCnvSvc         DEBUG RootCnvSvc::declareObject /Event/MC/TofMcHitCol classid: 132284
+EventCnvSvc         DEBUG RootCnvSvc::declareObject /Event/Dst/DstTofTrackCol classid: 132502
+EventCnvSvc         DEBUG RootCnvSvc::declareObject /Event/Digi/LumiDigiCol classid: 132422
+EventCnvSvc         DEBUG RootCnvSvc::declareObject /Event/Trig classid: 2100
+EventCnvSvc         DEBUG RootCnvSvc::declareObject /Event/Trig/TrigData classid: 2120
+EventCnvSvc         DEBUG RootCnvSvc::declareObject /Event/Hlt classid: 2200
+EventCnvSvc         DEBUG RootCnvSvc::declareObject /Event/Hlt/HltRawCol classid: 133282
+EventCnvSvc         DEBUG RootCnvSvc::declareObject /Event/Hlt/HltInf classid: 2220
+EventCnvSvc         DEBUG RootCnvSvc::declareObject /Event/Hlt/DstHltInf classid: 2230
+EventCnvSvc         DEBUG RootCnvSvc::declareObject /Event/Recon classid: 3000
+EventCnvSvc         DEBUG RootCnvSvc::declareObject /Event/Recon/RecMdcTrackCol classid: 134182
+EventCnvSvc         DEBUG RootCnvSvc::declareObject /Event/Recon/RecMdcHitCol classid: 134192
+EventCnvSvc         DEBUG RootCnvSvc::declareObject /Event/Recon/RecMdcKalTrackCol classid: 134222
+EventCnvSvc         DEBUG RootCnvSvc::declareObject /Event/Recon/RecMdcKalHelixSegCol classid: 134232
+EventCnvSvc         DEBUG RootCnvSvc::declareObject /Event/Recon/RecMdcDedxCol classid: 134212
+EventCnvSvc         DEBUG RootCnvSvc::declareObject /Event/Recon/RecMdcDedxHitCol classid: 134217
+EventCnvSvc         DEBUG RootCnvSvc::declareObject /Event/Recon/RecEsTimeCol classid: 134682
+EventCnvSvc         DEBUG RootCnvSvc::declareObject /Event/Recon/RecTofTrackCol classid: 134402
+EventCnvSvc         DEBUG RootCnvSvc::declareObject /Event/Recon/RecBTofCalHitCol classid: 134422
+EventCnvSvc         DEBUG RootCnvSvc::declareObject /Event/Recon/RecETofCalHitCol classid: 134432
+EventCnvSvc         DEBUG RootCnvSvc::declareObject /Event/Recon/RecEmcHitCol classid: 134292
+EventCnvSvc         DEBUG RootCnvSvc::declareObject /Event/Recon/RecEmcClusterCol classid: 134302
+EventCnvSvc         DEBUG RootCnvSvc::declareObject /Event/Recon/RecEmcShowerCol classid: 134282
+EventCnvSvc         DEBUG RootCnvSvc::declareObject /Event/Recon/RecMucTrackCol classid: 134482
+EventCnvSvc         DEBUG RootCnvSvc::declareObject /Event/Recon/MucRecHitCol classid: 134492
+EventCnvSvc         DEBUG RootCnvSvc::declareObject /Event/Recon/RecExtTrackCol classid: 134582
+EventCnvSvc         DEBUG RootCnvSvc::declareObject /Event/Recon/RecZddChannelCol classid: 134882
+EventCnvSvc         DEBUG RootCnvSvc::declareObject /Event/EvtRec classid: 4000
+EventCnvSvc         DEBUG RootCnvSvc::declareObject /Event/EvtRec/EvtRecEvent classid: 4010
+EventCnvSvc         DEBUG RootCnvSvc::declareObject /Event/EvtRec/EvtRecTrackCol classid: 135172
+EventCnvSvc         DEBUG RootCnvSvc::declareObject /Event/EvtRec/EvtRecPrimaryVertex classid: 4020
+EventCnvSvc         DEBUG RootCnvSvc::declareObject /Event/EvtRec/EvtRecVeeVertexCol classid: 135182
+EventCnvSvc         DEBUG RootCnvSvc::declareObject /Event/EvtRec/EvtRecPi0Col classid: 135202
+EventCnvSvc         DEBUG RootCnvSvc::declareObject /Event/EvtRec/EvtRecEtaToGGCol classid: 135212
+EventCnvSvc         DEBUG RootCnvSvc::declareObject /Event/EvtRec/EvtRecDTagCol classid: 135192
+EventCnvSvc         DEBUG RootCnvSvc::initFiles
+EventCnvSvc          INFO Root Input files 1
+RootCnvSvc          DEBUG addInput  for Tree Event
+EventCnvSvc       WARNING No specified digiRootOutputFile!
+ServiceManager      DEBUG Initializing service AppMgrRunable
+AppMgrRunable       DEBUG Service base class initialized successfully
+ServiceManager      DEBUG Initializing service EventLoopMgr
+EventLoopMgr        DEBUG Service base class initialized successfully
+IncidentSvc         DEBUG Adding [AbortEvent] listener '<unknown>' with priority 0
+EventLoopMgr        DEBUG Creating Top Algorithm RecMakerAlg with name RecMakerAlg
+EventLoopMgr        DEBUG Creating Top Algorithm ExtractEmcInfo with name ExtractEmcInfo
+RecMakerAlg          INFO in initialize()
+ExtractEmcInfo       INFO in initialize()
+NTupleSvc           DEBUG Service base class initialized successfully
+NTupleSvcConver...  DEBUG Service base class initialized successfully
+NTupleSvc            INFO Added stream file:test.root as FILE1
+RFileCnv             INFO opening Root file "test.root" for writing
+RFileCnv            DEBUG creating ROOT file test.root
+ExtractEmcInfo       INFO successfully return from initialize()
+HistogramDataSvc    DEBUG Service base class initialized successfully
+HistogramPersis...  DEBUG  'CnvServices':[ 'RootHistSvc' ]
+HistogramPersis...  DEBUG Service base class initialized successfully
+RootHistSvc         DEBUG Service base class initialized successfully
+RootHistSvc          INFO Writing ROOT histograms to: UndefinedROOTOutputFileName
+HistogramPersis...   INFO Added successfully Conversion service:RootHistSvc
+ApplicationMgr       INFO Application Manager Initialized successfully
+ServiceManager      DEBUG Starting service IncidentSvc
+ServiceManager      DEBUG Starting service EventPersistencySvc
+ServiceManager      DEBUG Starting service EventSelector
+ServiceManager      DEBUG Starting service EventCnvSvc
+ServiceManager      DEBUG Starting service AppMgrRunable
+ServiceManager      DEBUG Starting service EventDataSvc
+ServiceManager      DEBUG Starting service TagFilterSvc
+ServiceManager      DEBUG Starting service NTupleSvc
+ServiceManager      DEBUG Starting service RootHistSvc
+ServiceManager      DEBUG Starting service HistogramPersistencySvc
+ServiceManager      DEBUG Starting service HistogramDataSvc
+ServiceManager      DEBUG Starting service EventLoopMgr
+ApplicationMgr       INFO Application Manager Started successfully
+EventSelector        INFO m_criteriaType == ROOT
+EventSelector        INFO entry = 1    0   0
+EventSelector       DEBUG Reading Event 0
+EventSelector       DEBUG Max Event -1
+EventPersistenc...   INFO Added successfully Conversion service:EventCnvSvc
+EventCnv            DEBUG EventCnv::EventCnv()
+EventCnv            DEBUG createObj
+EventCnvSvc         DEBUG RootCnvSvc::updateServiceState
+EventCnvSvc         DEBUG RootCnvSvc::updateService  *****  1300 *****  /Event/Digi
+EventCnvSvc         DEBUG RootCnvSvc::updateService  *****  1400 *****  /Event/Dst
+EventCnvSvc         DEBUG RootCnvSvc::updateService  *****  112 *****  /Event/EventHeader
+EventCnvSvc         DEBUG RootCnvSvc::updateService  *****  4000 *****  /Event/EvtRec
+EventCnvSvc         DEBUG RootCnvSvc::updateService  *****  2200 *****  /Event/Hlt
+EventCnvSvc         DEBUG RootCnvSvc::updateService  *****  1200 *****  /Event/MC
+EventCnvSvc         DEBUG RootCnvSvc::updateService  *****  5101 *****  /Event/Navigator
+EventCnvSvc         DEBUG RootCnvSvc::updateService  *****  3000 *****  /Event/Recon
+EventCnvSvc         DEBUG RootCnvSvc::updateService  *****  2100 *****  /Event/Trig
+RecMakerAlg          INFO in execute()
+EvtHeaderCnv        DEBUG  constructor of EvtHeaderCnv 
+EvtHeaderCnv        DEBUG EvtHeaderCnv::initialize
+RootEventBaseCnv    DEBUG RootEventBaseCnv::createObj with clid 112
+RootCnvSvc          DEBUG RootInterface::setbranch address, treename: Event, branch m_runId
+RootCnvSvc           INFO RootInterface:;getTree
+RootCnvSvc           INFO RootInterface::opened file for input:test.rec
+RootCnvSvc           INFO get JobInfoTree
+
+**************************************************
+Print JobInfo for data file: test.rec
+          BOSS version: 7.0.8
+**************************************************
+
+
+**************************************************
+          Decay Options: 
+noPhotos
+Decay J/psi
+# Br particle SINGLE Pmin Pmax Cos[theta]_min Cos[theta]_max phi_min phi_max;
+1.0 anti-n0 SINGLE 0.05 1.2 -1.0 1.0;
+Enddecay
+End
+
+**************************************************
+
+DataInfoSvc          INFO DataInfoSvc::initialize()
+DataInfoSvc         DEBUG Service base class initialized successfully
+RootCnvSvc           INFO get the DataInfoSvc
+
+**************************************************
+          JobOptions for this data file: 
+
+
+#include "$OFFLINEEVENTLOOPMGRROOT/share/OfflineEventLoopMgr_Option.txt"
+
+#include "$BESEVTGENROOT/share/BesEvtGen.txt"
+EvtDecay.ParentParticle="J/psi";
+EvtDecay.userDecayTableName = "../../codes/anti_neutron.dec";
+
+BesRndmGenSvc.RndmSeed = 100;
+
+#include "$BESSIMROOT/share/G4Svc_BesSim.txt"
+G4Svc.BoostLab = false;
+
+#include "$CALIBSVCROOT/share/calibConfig_sim.txt"
+
+RealizationSvc.RunIdList = {-8093};
+
+#include "$ROOTIOROOT/share/jobOptions_Digi2Root.txt"
+RootCnvSvc.digiRootOutputFile = "0.rtraw"; 
+
+MessageSvc.OutputLevel  = 6;
+
+ApplicationMgr.EvtMax = 10; 
+
+          end of the jobOptions file 
+**************************************************
+
+#include "$ROOTIOROOT/share/jobOptions_ReadRoot.txt"
+#include "$OFFLINEEVENTLOOPMGRROOT/share/OfflineEventLoopMgr_Option.txt"
+
+
+#include "$CALIBSVCROOT/share/job-CalibData.txt"
+#include "$MAGNETICFIELDROOT/share/MagneticField.txt"
+#include "$ESTIMEALGROOT/share/job_EsTimeAlg.txt"
+
+#include "$MDCHOUGHFINDERROOT/share/jobOptions_MdcPatTsfHoughRec.txt"
+
+#include "$KALFITALGROOT/share/job_kalfit_numf_data.txt"
+#include "$MDCDEDXALGROOT/share/job_dedx_all.txt"
+#include "$TRKEXTALGROOT/share/TrkExtAlgOption.txt"
+#include "$TOFRECROOT/share/jobOptions_TofRec.txt"
+#include "$TOFENERGYRECROOT/share/TofEnergyRecOptions_MC.txt"
+#include "$EMCRECROOT/share/EmcRecOptions.txt"
+#include "$MUCRECALGROOT/share/jobOptions_MucRec.txt"
+
+#include "$EVENTASSEMBLYROOT/share/EventAssembly.txt"
+#include "$PRIMARYVERTEXALGROOT/share/jobOptions_kalman.txt"
+#include "$VEEVERTEXALGROOT/share/jobOptions_veeVertex.txt"
+
+#include "$HLTMAKERALGROOT/share/jobOptions_HltMakerAlg.txt"
+#include "$EVENTNAVIGATORROOT/share/EventNavigator.txt"
+
+#include "$ROOTIOROOT/share/jobOptions_Rec2Root.txt"
+
+#include "$CALIBSVCROOT/share/calibConfig_rec_mc.txt"
+
+
+BesRndmGenSvc.RndmSeed = 100;
+
+MessageSvc.OutputLevel = 2; 
+
+EventCnvSvc.digiRootInputFile = {"0.rtraw"};
+
+EventCnvSvc.digiRootOutputFile ="0.rec";
+
+ApplicationMgr.EvtMax = -1;
+
+
+          end of the jobOptions file 
+**************************************************
+
+RootCnvSvc          DEBUG RootInterface::setbranch address, treename: Event, branch m_eventId
+RootCnvSvc           INFO RootInterface:;getTree
+RootCnvSvc          DEBUG RootInterface::setbranch address, treename: Event, branch m_time
+RootCnvSvc           INFO RootInterface:;getTree
+RootCnvSvc          DEBUG RootInterface::setbranch address, treename: Event, branch m_eventTag
+RootCnvSvc           INFO RootInterface:;getTree
+RootCnvSvc          DEBUG RootInterface::setbranch address, treename: Event, branch m_flag1
+RootCnvSvc           INFO RootInterface:;getTree
+RootCnvSvc          DEBUG RootInterface::setbranch address, treename: Event, branch m_flag2
+RootCnvSvc           INFO RootInterface:;getTree
+RootEventBaseCnv     INFO  event id = 0
+RootEventBaseCnv     INFO  2nd  method set event as : 0
+RootCnvSvc          DEBUG RootInterface::getBranchEntry: , branch nr 0, entry 0
+RootCnvSvc          DEBUG RootInterface::getBranchEntry: , branch nr 1, entry 0
+RootCnvSvc          DEBUG RootInterface::getBranchEntry: , branch nr 2, entry 0
+RootCnvSvc          DEBUG RootInterface::getBranchEntry: , branch nr 3, entry 0
+RootCnvSvc          DEBUG RootInterface::getBranchEntry: , branch nr 4, entry 0
+RootCnvSvc          DEBUG RootInterface::getBranchEntry: , branch nr 5, entry 0
+EvtHeaderCnv        DEBUG TObjectToDataObject
+EvtHeaderCnv        DEBUG TObjectToDataObject eventid = 0  -8093  0x0
+EventCnvSvc         DEBUG RootCnvSvc::updateServiceState
+RecMakerAlg          INFO event: 0  run: -8093
+RecTrackCnv         DEBUG RecTrackCnv::initialize
+RootEventBaseCnv    DEBUG RootEventBaseCnv::createObj with clid 3000
+RootEventBaseCnv     INFO  event id = 0
+RootEventBaseCnv     INFO  2nd  method set event as : 0
+RecTrackCnv         DEBUG TObjectToDataObject
+EventCnvSvc         DEBUG RootCnvSvc::updateServiceState
+EventCnvSvc         DEBUG RootCnvSvc::updateService  *****  134492 *****  /Event/Recon/MucRecHitCol
+EventCnvSvc         DEBUG RootCnvSvc::updateService  *****  134422 *****  /Event/Recon/RecBTofCalHitCol
+EventCnvSvc         DEBUG RootCnvSvc::updateService  *****  134432 *****  /Event/Recon/RecETofCalHitCol
+EventCnvSvc         DEBUG RootCnvSvc::updateService  *****  134302 *****  /Event/Recon/RecEmcClusterCol
+EventCnvSvc         DEBUG RootCnvSvc::updateService  *****  134292 *****  /Event/Recon/RecEmcHitCol
+EventCnvSvc         DEBUG RootCnvSvc::updateService  *****  134282 *****  /Event/Recon/RecEmcShowerCol
+EventCnvSvc         DEBUG RootCnvSvc::updateService  *****  134682 *****  /Event/Recon/RecEsTimeCol
+EventCnvSvc         DEBUG RootCnvSvc::updateService  *****  134582 *****  /Event/Recon/RecExtTrackCol
+EventCnvSvc         DEBUG RootCnvSvc::updateService  *****  134212 *****  /Event/Recon/RecMdcDedxCol
+EventCnvSvc         DEBUG RootCnvSvc::updateService  *****  134217 *****  /Event/Recon/RecMdcDedxHitCol
+EventCnvSvc         DEBUG RootCnvSvc::updateService  *****  134192 *****  /Event/Recon/RecMdcHitCol
+EventCnvSvc         DEBUG RootCnvSvc::updateService  *****  134232 *****  /Event/Recon/RecMdcKalHelixSegCol
+EventCnvSvc         DEBUG RootCnvSvc::updateService  *****  134222 *****  /Event/Recon/RecMdcKalTrackCol
+EventCnvSvc         DEBUG RootCnvSvc::updateService  *****  134182 *****  /Event/Recon/RecMdcTrackCol
+EventCnvSvc         DEBUG RootCnvSvc::updateService  *****  134482 *****  /Event/Recon/RecMucTrackCol
+EventCnvSvc         DEBUG RootCnvSvc::updateService  *****  134402 *****  /Event/Recon/RecTofTrackCol
+EventCnvSvc         DEBUG RootCnvSvc::updateService  *****  134882 *****  /Event/Recon/RecZddChannelCol
+RootEventBaseCnv    DEBUG RootEventBaseCnv::createObj with clid 134182
+RootCnvSvc          DEBUG RootInterface::setbranch address, treename: Event, branch m_recMdcTrackCol
+RootCnvSvc           INFO RootInterface:;getTree
+RootEventBaseCnv     INFO  event id = 0
+RootEventBaseCnv     INFO  2nd  method set event as : 0
+RootCnvSvc          DEBUG RootInterface::getBranchEntry: , branch nr 6, entry 0
+RecMdcTrackCnv      DEBUG RecMdcTrackCnv::TObjectToDataObject
+RootEventBaseCnv    DEBUG RootEventBaseCnv::createObj with clid 134192
+RootCnvSvc          DEBUG RootInterface::setbranch address, treename: Event, branch m_recMdcHitCol
+RootCnvSvc           INFO RootInterface:;getTree
+RootEventBaseCnv     INFO  event id = 0
+RootEventBaseCnv     INFO  2nd  method set event as : 0
+RootCnvSvc          DEBUG RootInterface::getBranchEntry: , branch nr 7, entry 0
+RecMdcHitCnv        DEBUG RecMdcHitCnv::TObjectToDataObject
+EventCnvSvc         DEBUG RootCnvSvc::updateServiceState
+EventCnvSvc         DEBUG RootCnvSvc::updateServiceState
+RootEventBaseCnv    DEBUG RootEventBaseCnv::createObj with clid 134222
+RootCnvSvc          DEBUG RootInterface::setbranch address, treename: Event, branch m_recMdcKalTrackCol
+RootCnvSvc           INFO RootInterface:;getTree
+RootEventBaseCnv     INFO  event id = 0
+RootEventBaseCnv     INFO  2nd  method set event as : 0
+RootCnvSvc          DEBUG RootInterface::getBranchEntry: , branch nr 8, entry 0
+RecMdcKalTrackCnv   DEBUG RecMdcKalTrackCnv::TObjectToDataObject
+RootEventBaseCnv    DEBUG RootEventBaseCnv::createObj with clid 134232
+RootCnvSvc          DEBUG RootInterface::setbranch address, treename: Event, branch m_recMdcKalHelixSegCol
+RootCnvSvc           INFO RootInterface:;getTree
+RootEventBaseCnv     INFO  event id = 0
+RootEventBaseCnv     INFO  2nd  method set event as : 0
+RootCnvSvc          DEBUG RootInterface::getBranchEntry: , branch nr 9, entry 0
+RecMdcKalHelixS...  DEBUG RecMdcKalHelixSegCnv::TObjectToDataObject
+EventCnvSvc         DEBUG RootCnvSvc::updateServiceState
+EventCnvSvc         DEBUG RootCnvSvc::updateServiceState
+RootEventBaseCnv    DEBUG RootEventBaseCnv::createObj with clid 134212
+RootCnvSvc          DEBUG RootInterface::setbranch address, treename: Event, branch m_recMdcDedxCol
+RootCnvSvc           INFO RootInterface:;getTree
+RootEventBaseCnv     INFO  event id = 0
+RootEventBaseCnv     INFO  2nd  method set event as : 0
+RootCnvSvc          DEBUG RootInterface::getBranchEntry: , branch nr 10, entry 0
+RecMdcDedxCnv       DEBUG RecMdcDedxCnv::TObjectToDataObject
+RootEventBaseCnv    DEBUG RootEventBaseCnv::createObj with clid 134217
+RootCnvSvc          DEBUG RootInterface::setbranch address, treename: Event, branch m_recMdcDedxHitCol
+RootCnvSvc           INFO RootInterface:;getTree
+RootEventBaseCnv     INFO  event id = 0
+RootEventBaseCnv     INFO  2nd  method set event as : 0
+RootCnvSvc          DEBUG RootInterface::getBranchEntry: , branch nr 11, entry 0
+RecMdcDedxHitCnv    DEBUG RecMdcDedxHitCnv::TObjectToDataObject
+EventCnvSvc         DEBUG RootCnvSvc::updateServiceState
+EventCnvSvc         DEBUG RootCnvSvc::updateServiceState
+RootEventBaseCnv    DEBUG RootEventBaseCnv::createObj with clid 134582
+RootCnvSvc          DEBUG RootInterface::setbranch address, treename: Event, branch m_recExtTrackCol
+RootCnvSvc           INFO RootInterface:;getTree
+RootEventBaseCnv     INFO  event id = 0
+RootEventBaseCnv     INFO  2nd  method set event as : 0
+RootCnvSvc          DEBUG RootInterface::getBranchEntry: , branch nr 12, entry 0
+RecExtTrackCnv      DEBUG RecExtTrackCnv::TObjectToDataObject
+EventCnvSvc         DEBUG RootCnvSvc::updateServiceState
+RootEventBaseCnv    DEBUG RootEventBaseCnv::createObj with clid 134402
+RootCnvSvc          DEBUG RootInterface::setbranch address, treename: Event, branch m_recTofTrackCol
+RootCnvSvc           INFO RootInterface:;getTree
+RootEventBaseCnv     INFO  event id = 0
+RootEventBaseCnv     INFO  2nd  method set event as : 0
+RootCnvSvc          DEBUG RootInterface::getBranchEntry: , branch nr 13, entry 0
+RecTofTrackCnv      DEBUG RecTofTrackCnv::TObjectToDataObject
+EventCnvSvc         DEBUG RootCnvSvc::updateServiceState
+RootEventBaseCnv    DEBUG RootEventBaseCnv::createObj with clid 134282
+RootCnvSvc          DEBUG RootInterface::setbranch address, treename: Event, branch m_recEmcShowerCol
+RootCnvSvc           INFO RootInterface:;getTree
+RootEventBaseCnv     INFO  event id = 0
+RootEventBaseCnv     INFO  2nd  method set event as : 0
+RootCnvSvc          DEBUG RootInterface::getBranchEntry: , branch nr 14, entry 0
+RecEmcShowerCnv     DEBUG RecEmcShowerCnv::TObjectToDataObject
+RootEventBaseCnv    DEBUG RootEventBaseCnv::createObj with clid 134292
+RootCnvSvc          DEBUG RootInterface::setbranch address, treename: Event, branch m_recEmcHitCol
+RootCnvSvc           INFO RootInterface:;getTree
+RootEventBaseCnv     INFO  event id = 0
+RootEventBaseCnv     INFO  2nd  method set event as : 0
+RootCnvSvc          DEBUG RootInterface::getBranchEntry: , branch nr 15, entry 0
+RecEmcHitCnv        DEBUG RecEmcHitCnv::TObjectToDataObject
+EventCnvSvc         DEBUG RootCnvSvc::updateServiceState
+RootEventBaseCnv    DEBUG RootEventBaseCnv::createObj with clid 134302
+RootCnvSvc          DEBUG RootInterface::setbranch address, treename: Event, branch m_recEmcClusterCol
+RootCnvSvc           INFO RootInterface:;getTree
+RootEventBaseCnv     INFO  event id = 0
+RootEventBaseCnv     INFO  2nd  method set event as : 0
+RootCnvSvc          DEBUG RootInterface::getBranchEntry: , branch nr 16, entry 0
+RecEmcClusterCnv    DEBUG RecEmcClusterCnv::TObjectToDataObject
+EventCnvSvc         DEBUG RootCnvSvc::updateServiceState
+EventCnvSvc         DEBUG RootCnvSvc::updateServiceState
+RootEventBaseCnv    DEBUG RootEventBaseCnv::createObj with clid 134482
+RootCnvSvc          DEBUG RootInterface::setbranch address, treename: Event, branch m_recMucTrackCol
+RootCnvSvc           INFO RootInterface:;getTree
+RootEventBaseCnv     INFO  event id = 0
+RootEventBaseCnv     INFO  2nd  method set event as : 0
+RootCnvSvc          DEBUG RootInterface::getBranchEntry: , branch nr 17, entry 0
+RecMucTrackCnv      DEBUG RecMucTrackCnv::TObjectToDataObject
+EventCnvSvc         DEBUG RootCnvSvc::updateServiceState
+ExtractEmcInfo       INFO in execute()
+McCnv               DEBUG McCnv::initialize
+RootEventBaseCnv    DEBUG RootEventBaseCnv::createObj with clid 1200
+RootEventBaseCnv     INFO  event id = 0
+RootEventBaseCnv     INFO  2nd  method set event as : 0
+McCnv               DEBUG TObjectToDataObject
+EventCnvSvc         DEBUG RootCnvSvc::updateServiceState
+EventCnvSvc         DEBUG RootCnvSvc::updateService  *****  132285 *****  /Event/MC/EmcMcHitCol
+EventCnvSvc         DEBUG RootCnvSvc::updateService  *****  263345 *****  /Event/MC/McParticleCol
+EventCnvSvc         DEBUG RootCnvSvc::updateService  *****  132283 *****  /Event/MC/MdcMcHitCol
+EventCnvSvc         DEBUG RootCnvSvc::updateService  *****  132286 *****  /Event/MC/MucMcHitCol
+EventCnvSvc         DEBUG RootCnvSvc::updateService  *****  132284 *****  /Event/MC/TofMcHitCol
+RootEventBaseCnv    DEBUG RootEventBaseCnv::createObj with clid 263345
+RootCnvSvc          DEBUG RootInterface::setbranch address, treename: Event, branch m_mcParticleCol
+RootCnvSvc           INFO RootInterface:;getTree
+RootEventBaseCnv     INFO  event id = 0
+RootEventBaseCnv     INFO  2nd  method set event as : 0
+RootCnvSvc          DEBUG RootInterface::getBranchEntry: , branch nr 18, entry 0
+McParticleCnv       DEBUG McParticleCnv::TObjectToDataObject
+EventCnvSvc         DEBUG RootCnvSvc::updateServiceState
+RCWNTupleCnv        DEBUG adding TBranch  index/I  at 0x1fcc280
+RCWNTupleCnv        DEBUG adding TBranch  momentum/F  at 0x1fcc284
+RCWNTupleCnv        DEBUG adding TBranch  theta/F  at 0x1fcc288
+RCWNTupleCnv        DEBUG adding TBranch  phi/F  at 0x1fcc28c
+RCWNTupleCnv        DEBUG adding TBranch  all_hit_crystal_id[index]/I  at 0x1fcc290
+RCWNTupleCnv        DEBUG adding TBranch  all_hit_energy[index]/F  at 0x1fcc29c
+RCWNTupleCnv        DEBUG adding TBranch  leading_shower_id/I  at 0x1fcc2a8
+RCWNTupleCnv        DEBUG adding TBranch  leading_shower_hit_crystal_id[index]/I  at 0x1fcc2ac
+RCWNTupleCnv        DEBUG adding TBranch  leading_shower_hit_energy[index]/F  at 0x1fcc2b8
+RCWNTupleCnv         INFO Booked TTree with ID: EmcInfo "N-Tuple" in directory test.root:/

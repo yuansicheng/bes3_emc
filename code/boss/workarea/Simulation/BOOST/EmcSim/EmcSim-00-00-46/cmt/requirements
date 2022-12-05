@@ -1,0 +1,29 @@
+package EmcSim
+
+author Deng ziyan<dengzy@mail.ihep.ac.cn>
+branches src cmt
+
+use  BesPolicy      BesPolicy-01-*
+use BesGeant4    BesGeant4-00-*   External
+use GdmlToG4  GdmlToG4-*   External
+use SimUtil  SimUtil-*   Simulation/BOOST
+use TruSim   TruSim-*    Simulation/BOOST
+use GaudiInterface GaudiInterface-* External
+use G4Svc   G4Svc-*  Simulation
+use G4Geo    G4Geo-*     DetectorDescription
+use Identifier     Identifier-*       DetectorDescription
+use EmcGeneralClass EmcGeneralClass-* Emc
+use EmcCalibConstSvc EmcCalibConstSvc-*       Emc
+
+use NNGeneratorSvc NNGeneratorSvc-*
+
+
+include_dirs $(EmcSim_root)/EmcSim   \
+             $(SimUtil_root)/SimUtil \
+             $(TruSim_root)/TruSim
+
+apply_pattern installed_library
+
+library  EmcSim *.cc
+
+

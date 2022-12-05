@@ -1,0 +1,12 @@
+(i__main__
+LogFile
+p0
+(dp1
+S'_installed_files'
+p2
+(dp3
+S'../../../../../../../../../../cvmfs/bes3.ihep.ac.cn/bes3sw/ExternalLib/SLC6/ExternalLib/gaudi/GAUDI_v23r9/GaudiSvc/x86_64-slc6-gcc46-opt/libGaudiSvc.so'
+p4
+S'../../../../../InstallArea/x86_64-slc6-gcc46-opt/lib/libGaudiSvc.so'
+p5
+ssb.

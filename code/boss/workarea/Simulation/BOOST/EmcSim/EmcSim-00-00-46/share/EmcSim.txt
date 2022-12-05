@@ -1,0 +1,6 @@
+G4Svc.EmcIncoherentNoise=0.27;
+G4Svc.EmcTime=8;
+
+//EmcElecSaturation=1 MC reconstruction by using EmaxData from data
+//EmcElecSaturation=0 MC reconstruction by using Bhabha calibration
+G4Svc.EmcELecSaturation=1;
