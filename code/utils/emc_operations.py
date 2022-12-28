@@ -50,8 +50,11 @@ def getHitImgAll(hit_map):
     hit_img = np.zeros((emc_info.getBarrelShape()[0], emc_info.getBarrelShape()[1]))
 
     for emc_id, energy in hit_map.items():
-        this_coo = emc_info.barrelId2Coordinate(emc_id)
-        hit_img[this_coo[0], this_coo[1]] = energy
+        try:
+            this_coo = emc_info.barrelId2Coordinate(emc_id)
+            hit_img[this_coo[0], this_coo[1]] = energy
+        except:
+            pass
 
     return hit_img
 
@@ -62,7 +65,7 @@ def showHitImg(hit_img, marks=[], figsize=(5,5), drop_zero=True):
     fig = plt.figure(figsize=figsize, dpi=96)
     ax = plt.axes()
     for mark in marks:
-        ax.add_patch(patches.Rectangle(np.array(mark)-2.5, 5, 5, fill=False, linewidth=1, edgecolor='red', zorder=100))
+        ax.add_patch(patches.Rectangle(np.array(mark)-0.5, 1, 1, fill=False, linewidth=1, edgecolor='red', zorder=100))
     plt.imshow(hit_img.T, zorder=10)
     plt.xlabel('ntheta')
     plt.ylabel('nphi')

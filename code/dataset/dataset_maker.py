@@ -22,7 +22,7 @@ utils_path = os.path.join(this_path, '../utils')
 if utils_path not in sys.path:
     sys.path.append(utils_path)
 
-from root_operations import readRootFile
+from root_operations import readRootFile, getDictLen
 
 class DatasetMaker:
     def __init__(
@@ -55,12 +55,9 @@ class DatasetMaker:
         if not os.path.isdir(h5_path):
             os.makedirs(h5_path)
 
-    def _getDictLen(self, d):
-        return len(list(d.values())[0]) if d else 0
-
     def run(self):
         for i in tqdm(range(self._n_files)):
-            while self._getDictLen(self._data) < self._events_per_file:
+            while getDictLen(self._data) < self._events_per_file:
                 self._processOneFile(self._root_files[self._root_index])
                 self._root_index += 1
             self._saveOneH5(i)
@@ -79,7 +76,7 @@ class DatasetMaker:
         root_data = self.preprocessRoot(root_data)
         
         print('preproccessing event: ')
-        for i in tqdm(range(self._getDictLen(root_data))):
+        for i in tqdm(range(getDictLen(root_data))):
             event_data = {k:v[i] for k,v in root_data.items()}
             self.processOneEvent(event_data)
 

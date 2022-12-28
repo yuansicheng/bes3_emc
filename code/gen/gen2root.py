@@ -85,6 +85,7 @@ for i in range(int(args.n/args.events_per_file)):
         job_content.append('python {}/sim2rec.py\\'.format(this_path))
         job_content.append('\t-i {}\\'.format(i))
         job_content.append('\t-t {}\\'.format(args.job_option_template_rec))
+        job_content.append('\t--target_particle {}\\'.format(args.target_particle))
         job_content.append('\t--model_1 {}\\'.format(args.model_1))
         job_content.append('\t--model_2 {}\\'.format(args.model_2))
         job_content.append('\t--region {}\\'.format(args.region))

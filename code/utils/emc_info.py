@@ -8,9 +8,12 @@
 import os, sys, logging
 import pandas as pd
 
+__all__ = ['EmcInfo']
+
 this_path = os.path.dirname(__file__)
 if this_path not in sys.path:
     sys.path.append(this_path)
+
 
 class EmcInfo:
     def __init__(self) -> None:

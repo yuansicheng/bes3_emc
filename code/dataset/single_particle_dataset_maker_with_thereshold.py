@@ -23,7 +23,7 @@ from root_operations import *
 from emc_operations import getHitImg
 from emc_info import EmcInfo
 
-class SingleParticleDatasetMaker(DatasetMaker):
+class SingleParticleDatasetWithThresholdMaker(DatasetMaker):
     def __init__(self, 
         root_path='', 
         h5_path='', 
@@ -31,7 +31,8 @@ class SingleParticleDatasetMaker(DatasetMaker):
         events_per_file=10000, 
         tree='EmcInfo', 
         pdg_code=-2112, 
-        region=5) -> None:
+        region=5, 
+        e_threshold=0.1) -> None:
         super().__init__(
             root_path=root_path, 
             h5_path=h5_path, 
@@ -42,6 +43,7 @@ class SingleParticleDatasetMaker(DatasetMaker):
 
         self._pdg_code = pdg_code
         self._region = region
+        self._e_threshold = e_threshold
 
         self._emc_info = EmcInfo()
         
@@ -54,6 +56,7 @@ class SingleParticleDatasetMaker(DatasetMaker):
         root_data = selectTargetParticle(root_data, self._pdg_code)
         root_data = selectHitBarrel(root_data)
         root_data = selectLeadingShowerInBarrel(root_data)
+        root_data = selectE(root_data, threshold=self._e_threshold)
 
         return root_data
 

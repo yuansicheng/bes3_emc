@@ -31,7 +31,6 @@ args = parser.parse_args()
 job_option_file =  'job_option_sim_{}.txt'.format(args.i)
 rtraw_file = '{}.rtraw'.format(args.i)
 
-print(args.log_level)
 replace_dict = {
     'EvtDecay.userDecayTableName': args.card ,
     'ApplicationMgr.EvtMax': int(args.events_per_file),
